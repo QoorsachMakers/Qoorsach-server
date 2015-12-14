@@ -1,0 +1,18 @@
+body {
+    background-image: url("/img/deerBackground.jpg");
+    background-color: cornsilk;
+    text-align: center;
+}
+body > * { text-align: left; }
+form {
+    padding: 5%;
+    text-align: center;
+    border-radius: 3%;
+    background-color: whitesmoke;
+    width: 250px;
+    height: 400px;
+    display: inline-block;
+}
+input {
+
+}
