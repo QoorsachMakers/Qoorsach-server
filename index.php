@@ -28,13 +28,14 @@
         $answers = array("да", "нет", "тебя это ебет что ли", "успокойся бля все норм будет чо ты", "толстота ебаная съеби нахуй", "Как бы да, но лучше бы нет", "нихуя", "100%", "я бы тебе сказал шансы, но ты расстроишься", "иди нахуй");
         if($_POST["question"]!=null){
             $question = trim($_POST["question"]);
-            if($_POST["simplify"]){
+            if (strtolower($question)=="сгенерируй число" or strtolower($question)=="сгенерируй мне число"){
+                echo rand(0,10);
+            } elseif($_POST["simplify"]){
                 echo (rand(1,2)==2) ? "Да" : "Нет";
             } elseif (substr_count($question, " или ")>0) {
-                if($question[count($question)-1]=='?'){ $question[count($question)]=''; }
+                if($question[count($question)-1]=='?'){ $question[count($question)-1]=''; }
                 $dividedQuestion = explode(" или ", $question);
-                $randKey = array_rand($dividedQuestion, 1);
-                echo $dividedQuestion[$randKey[0]];
+                echo $dividedQuestion[rand(-1,count($dividedQuestion)-1)];
             } else {
                 echo $answers[rand(0,9)];
             }
