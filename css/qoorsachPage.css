@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 body > * {
-    font-family: Helvetica;
+    font-family: Georgia;
 }
 
 h1{
@@ -79,16 +79,15 @@ blockquote.style1 span {
 
 .right-image-test{
     padding: 10px;
-    float: right;
+    display: inline-block;
     margin: 10px;
+    height: 25%;
     width: 25%;
-    height: 10px;
+    float:right;
 }
-.right-image-test img{
-    height: 100%;
-    width:100%;
+/*.right-image-test img{
     object-fit: contain;
-}
+}*/
 
 .question{
     text-align: justify;
@@ -149,7 +148,7 @@ blockquote.style1 span {
     background-color: whitesmoke;
     width: 75%;
     min-width: 400px;
-    opacity: 0.98;
+    opacity: 0.985;
     margin-top: 20px;
     padding:35px;
 }

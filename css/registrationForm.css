@@ -1,0 +1,53 @@
+body {
+    background-image: url("/img/qoorsachEnglishBackground.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: white;
+    text-align: center;
+}
+
+.feed{
+    display: inline-block;
+    text-align: center;
+    background-color: whitesmoke;
+    width: 40%;
+    min-width: 300px;
+    opacity: 0.985;
+    margin-top: 20px;
+    padding:35px;
+}
+.feed table{
+    width: 95%;
+}
+table input{
+    width:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.btn {
+    margin: 20px;
+    font-family: Helvetica;
+    font-size: 14pt;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 0px #fafaaa;
+    text-shadow: 0px 0px 0px #5c5c5c;
+    box-shadow: 0px 0px 2px #fafaaa;
+    color: #474737;
+    background: #fff64c;
+    padding: 11px 12px 11px 12px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #f5e078;
+    background-image: -webkit-linear-gradient(top, #f5e078, #fff04c);
+    background-image: -moz-linear-gradient(top, #f5e078, #fff04c);
+    background-image: -ms-linear-gradient(top, #f5e078, #fff04c);
+    background-image: -o-linear-gradient(top, #f5e078, #fff04c);
+    background-image: linear-gradient(to bottom, #f5e078, #fff04c);
+    text-decoration: none;
+}
