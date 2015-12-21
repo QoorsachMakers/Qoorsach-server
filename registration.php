@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once('global.php');
+include_once('scripts/global.php');
 if (isset($_POST['submit'])) {
     $err = array();
     $captcha = $_SESSION['code'];
@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
         $email = $_POST['user_email'];
         # Убераем лишние пробелы
         $password = trim($_POST['user_password']);
-        $hash = md5($password);
+        $hash = md5($password.$login);
 
         $subject = 'Ваша регистрация на моем сайтике';
         $message = 'Ваш логин:' . $login . "\r\n" .
@@ -52,9 +52,8 @@ if (isset($_POST['submit'])) {
         mail($email, $subject, $message);
 
         mysqli_query($databaseLink, "INSERT INTO Students SET Student_Login='" . $login . "', Student_Password='" . $password . "', Student_Email='" . $email . "', Student_Hash='" . $hash . "'");
-        print   "<div class='feed'>"
-            . "Успешная регистрация" . "<br>" .
-            "</div><br>";
+        header("Location: login.php"); exit();
+
 
     } else {
         print "<div class='feed'>";
@@ -71,6 +70,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <link rel=stylesheet href="css/registrationForm.css">
+    <title>Регистрация</title>
 </head>
 <body>
 <form method="post" class="feed">
