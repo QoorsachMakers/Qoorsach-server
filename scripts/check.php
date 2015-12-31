@@ -16,6 +16,6 @@ if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
         #print "<div class='feed'><p>Что-то не получилось.</p></div><br>";
     }
 } else {
-    header("Location: login.php");
+    header("Location: login.php?cookie=off");
 }
 ?>

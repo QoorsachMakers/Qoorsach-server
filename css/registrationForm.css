@@ -6,8 +6,7 @@ body {
     text-align: center;
 }
 
-
-.captcha{
+.captcha {
     text-align: center;
     clear: both;
     max-width: 100%;
@@ -16,27 +15,28 @@ body {
     height: auto;
 }
 
-
-.feed{
+.feed {
     clear: both;
     display: inline-block;
     text-align: center;
     background-color: whitesmoke;
     width: 40%;
     min-width: 300px;
+    max-width: 450px;
     opacity: 0.985;
     margin-top: 20px;
-    padding:35px;
+    padding: 35px;
 }
-.feed table{
+
+.feed table {
     width: 95%;
 }
-table input{
-    width:100%;
+
+table input {
+    width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
 }
-
 
 .btn {
     margin: 20px;

@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
         $email = $_POST['user_email'];
         # Убераем лишние пробелы
         $password = trim($_POST['user_password']);
-        $hash = md5($password.$login);
+        $hash = md5($password . $login);
 
         $subject = 'Ваша регистрация на моем сайтике';
         $message = 'Ваш логин:' . $login . "\r\n" .
@@ -52,7 +52,8 @@ if (isset($_POST['submit'])) {
         mail($email, $subject, $message);
 
         mysqli_query($databaseLink, "INSERT INTO Students SET Student_Login='" . $login . "', Student_Password='" . $password . "', Student_Email='" . $email . "', Student_Hash='" . $hash . "'");
-        header("Location: login.php"); exit();
+        header("Location: login.php");
+        exit();
 
 
     } else {
@@ -75,7 +76,8 @@ if (isset($_POST['submit'])) {
 <body>
 <form method="post" class="feed">
     <p>
-        Введите свои данные >:)))0
+        Введите свои данные >:)))0<br>
+        <a href="main.php">Уже зарегистрировались?</a>
     </p>
     <table>
         <tr>
