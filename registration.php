@@ -57,7 +57,7 @@ if (isset($_POST['submit'])) {
 
 
     } else {
-        print "<div class='feed'>";
+        print "<div class='registration-block'>";
         print "<b>При регистрации произошли следующие ошибки:</b><br>";
         foreach ($err AS $error) {
             print $error . "<br>";
@@ -70,11 +70,11 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet href="css/registrationForm.css">
+    <link rel=stylesheet href="css/commonStylesheet.css">
     <title>Регистрация</title>
 </head>
 <body>
-<form method="post" class="feed">
+<form method="post" class="registration-block">
     <p>
         Введите свои данные >:)))0<br>
         <a href="main.php">Уже зарегистрировались?</a>

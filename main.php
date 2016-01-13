@@ -1,4 +1,4 @@
-<?php //TODO:Код, генерирующий таблицу с пройденными тестами и их результатами.
+<?php
 include_once('scripts/global.php');
 include_once('scripts/check.php');
 
@@ -17,7 +17,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
 <head>
     <meta charset="UTF-8">
     <title>Система обучения</title>
-    <link rel="stylesheet" href="css/qoorsachPage.css">
+    <link rel="stylesheet" href="css/commonStylesheet.css">
 </head>
 <body>
 <div class="feed">
@@ -27,6 +27,11 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
         <li>
             <a href="qoorsachPattern.html">
                 Страница-шаблон.
+            </a>
+        </li>
+        <li>
+            <a href="pages/hearthstoneText.php">
+                Тест по херстоуну
             </a>
         </li>
     </ul>
@@ -47,5 +52,6 @@ if ($testsAndResults){
     echo '</div>';
 }
 ?>
+
 </body>
 </html>

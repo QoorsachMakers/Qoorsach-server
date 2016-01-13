@@ -12,10 +12,10 @@ if (isset($_COOKIE['id']) and isset($_COOKIE['hash'])){
     if($studentData['Student_Hash'] !== $_COOKIE['hash'] or $studentData['Student_ID'] !== $_COOKIE['id']){
         setcookie("id","", time()-3600*24*30*12,"/");
         setcookie("hash", "", time()-3600*24*30*12, "/");
-        header("Location: login.php?cookie=corrupted");
+        header("Location: login.php");
         #print "<div class='feed'><p>Что-то не получилось.</p></div><br>";
     }
 } else {
-    header("Location: login.php?cookie=off");
+    header("Location: /login.php");
 }
 ?>

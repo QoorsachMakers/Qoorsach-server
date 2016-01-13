@@ -15,7 +15,7 @@ body {
     height: auto;
 }
 
-.feed {
+.registration-block {
     clear: both;
     display: inline-block;
     text-align: center;
@@ -26,9 +26,10 @@ body {
     opacity: 0.985;
     margin-top: 20px;
     padding: 35px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.5);
 }
 
-.feed table {
+.registration-block table {
     width: 95%;
 }
 
@@ -39,27 +40,22 @@ table input {
 }
 
 .btn {
-    margin: 20px;
-    font-family: Helvetica;
-    font-size: 14pt;
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 0px 0px #fafaaa;
-    text-shadow: 0px 0px 0px #5c5c5c;
-    box-shadow: 0px 0px 2px #fafaaa;
-    color: #474737;
-    background: #fff64c;
-    padding: 11px 12px 11px 12px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 0px 1px #666666;
+    -moz-box-shadow: 0px 0px 1px #666666;
+    box-shadow: 0px 0px 1px #666666;
+    font-family: Georgia;
+    color: #383838;
+    font-size: 18px;
+    background: #ffffff;
+    padding: 12px 18px 12px 18px;
     text-decoration: none;
+    border: none;
 }
 
 .btn:hover {
-    background: #f5e078;
-    background-image: -webkit-linear-gradient(top, #f5e078, #fff04c);
-    background-image: -moz-linear-gradient(top, #f5e078, #fff04c);
-    background-image: -ms-linear-gradient(top, #f5e078, #fff04c);
-    background-image: -o-linear-gradient(top, #f5e078, #fff04c);
-    background-image: linear-gradient(to bottom, #f5e078, #fff04c);
+    background: #c2c2c2;
     text-decoration: none;
 }

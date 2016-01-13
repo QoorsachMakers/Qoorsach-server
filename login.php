@@ -27,10 +27,10 @@ if (isset($_POST['submit'])) {
             header("Location: main.php");
             exit();
         } else {
-            print "<div class='feed'>" . "Неверный логин/пароль" . "</div><br>";
+            print "<div class='registration-block'>" . "Неверный логин/пароль" . "</div><br>";
         }
     } else {
-        print "<div class='feed'>Код капчи неправильный" .
+        print "<div class='registration-block'>Код капчи неправильный" .
             "<br><span style='color:#c2c2c2'>Ты точно не бот?</span></div><br>";
     }
 
@@ -38,10 +38,10 @@ if (isset($_POST['submit'])) {
 }
 
 if ($_GET['cookie'] == 'off') {
-    print "<div class='feed'>Залогиниться не получилось:" .
+    print "<div class='registration-block'>Залогиниться не получилось:" .
         "<br>У вас отключены куки, или ты пытался зайти на страницу не залогинившись</div><br>";
 } elseif ($_GET['cookie'] == 'corrupted') {
-    print "<div class='feed'>Залогиниться не получилось:" .
+    print "<div class='registration-block'>Залогиниться не получилось:" .
         "<br>Что-то пошло не так.<br>Hash:" . $_COOKIE['hash'] . "<br> ID:" . $_COOKIE['id']
         . "</div><br>";
 }
@@ -50,22 +50,22 @@ if ($_GET['cookie'] == 'off') {
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel=stylesheet href="css/registrationForm.css">
+    <link rel=stylesheet href="css/commonStylesheet.css">
     <title>Вход</title>
 </head>
 <body>
-<form method="post" class="feed">
+<form method="post" class="registration-block">
     <p>
         Уже <a href="registration.php">зарегистрировались?</a> <br>
         Введите свои данные:
     </p>
     <table>
         <tr>
-            <td>Логин <span style='color: firebrick'>*</span></td>
+            <td>Логин</td>
             <td><input name="login"></td>
         </tr>
         <tr>
-            <td>Пароль <span style='color: firebrick'>*</span></td>
+            <td>Пароль</td>
             <td><input type="password" name="password"></td>
         </tr>
     </table>

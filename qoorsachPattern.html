@@ -3,13 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Система обучения</title>
-    <link rel="stylesheet" href="css/qoorsachPage.css">
+    <link rel="stylesheet" href="css/commonStylesheet.css">
 </head>
 <body>
+<div class="head">
+    <a href="main.php">
+        Главная
+    </a>
+    <a href="login.php">
+        Логин
+    </a>
+    <a  href="scripts/logoff.php">
+        Разлогин
+    </a>
+
+</div>
 <div class="feed">
     <h1>Here goes lesson name</h1>
     <h2>Here goes particular subject name</h2>
-    <img src="img/yobaDice.png" title="Here goes image" class="right-image">
+    <div class="right-image"><img src="img/yobaDice.png" title="Here goes image"></div>
     <p>
         Here goes a terrible lot of text, fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
@@ -33,7 +45,7 @@
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
     </p>
-    <img class="center-image" src="img/deerBackground.jpg">
+    <div class="center-image"><img src="img/deerBackground.jpg"></div>
     <p>
         Here goes a terrible lot of text, fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
@@ -86,8 +98,8 @@
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
     </p>
-    <div class="center-image-text"><img src="img/deerBackgroundVertical.jpg">Here goes text with image in the center
-    </div>
+    <div class="center-image-text"><img src="img/deerBackgroundVertical.jpg"><br>Here goes text with image in the center
+    </div><br>
     <p>
         Here goes a terrible lot of text, fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
         fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
@@ -145,85 +157,115 @@
 <form name="fgsfds" class="feed">
     <h1>Here goes test</h1>
     <div class="question">
-        <p>Here goes guestion<br>
-            fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
+        <h4>Here goes guestion 1</h4>
+        <p>fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
             fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds <br>
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         <div class="answer">
-            <textarea value="Here's prompt to input textual ansewer"></textarea>
+            <textarea  placeholder="Here's prompt to input textual answer"></textarea>
         </div>
     </div>
     <div class="question">
-        <p> Here goes question 2<br>
-            fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
+         <h4>Here goes question 2</h4>
+        <p>fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
             fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds <br>
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         <div class="answer">
-            <input name="question2" type="radio" value="Value1">Answer1
-            <input name="question2" type="radio" value="Value2">Answer2
-            <input name="question2" type="radio" value="Value3">Answer3
-            <input name="question2" type="radio" value="Value4">Answer4
+            <label>
+                <input name="question2" type="radio" value="Value1">
+                Answer1
+            </label>
+            <label>
+                <input name="question2" type="radio" value="Value2">
+                Answer2
+            </label>
+            <label>
+                <input name="question2" type="radio" value="Value3">
+                Answer3
+            </label>
+            <label>
+                <input name="question2" type="radio" value="Value4">
+                Answer4
+            </label>
         </div>
     </div>
     <div class="question">
-        <p> Here goes question 3<br>
-            fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
+        <h4>Here goes question 3</h4>
+        <p> fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
             fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds <br>
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         <div class="answer">
-            <input name="question3" type="radio" value="Value1">Answer1<br>
-            <input name="question3" type="radio" value="Value2">Answer2<br>
-            <input name="question3" type="radio" value="Value3">Answer3<br>
-            <input name="question3" type="radio" value="Value4">Answer4<br>
-            <input name="question3" type="radio" value="Value5">Answer5<br>
-            <input name="question3" type="radio" value="Value6">Answer6
+            <label>
+                <input name="question3" type="radio" value="Value1">
+                Answer1
+            </label><br>
+            <label>
+                <input name="question3" type="radio" value="Value2">
+                Answer2
+            </label><br>
+            <label>
+                <input name="question3" type="radio" value="Value3">
+                Answer3
+            </label><br>
+            <label>
+                <input name="question3" type="radio" value="Value4">
+                Answer4
+            </label><br>
+            <label>
+                <input name="question3" type="radio" value="Value5">
+                Answer5
+            </label><br>
+            <label>
+                <input name="question3" type="radio" value="Value6">
+                Answer6
+            </label>
         </div>
     </div>
     <div class="question">
-        <p> Here goes question 4<br>
+        <h4>Here goes question 4</h4>
 
-            fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
+        <p> fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
             fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds <br>
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         <div class="answer">
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option1
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option2
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option3
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option4
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option5
-            <input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option6
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option1</label>
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option2</label>
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option3</label>
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option4</label>
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option5</label>
+            <label><input name="question4[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option6</label>
         </div>
     </div>
     <div class="question">
 
-        <p> Here goes question 5<br>
-            fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
+        <h4>Here goes question 5</h4>
+        <p> fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds
             fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds fgsfds <br>
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
             blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
         <div class="answer">
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option1<br>
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option2<br>
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option3<br>
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option4<br>
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option5<br>
-            <input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
-                   type="checkbox">Option6<br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option1</label><br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option2</label><br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option3</label><br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option4</label><br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option5</label><br>
+            <label><input name="question5[]" title="<<скобочки квадратные поставь в имени блядь это важно сука"
+                          type="checkbox"/>Option6</label><br>
         </div>
 
     </div>
