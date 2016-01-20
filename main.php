@@ -31,7 +31,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
         </li>
         <li>
             <a href="pages/hearthstoneText.php">
-                Тест по херстоуну
+                Тест по харстоуну
             </a>
         </li>
     </ul>

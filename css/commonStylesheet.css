@@ -49,10 +49,12 @@ body > * {
 }
 
 .feed h1 {
+    text-align: center;
     margin-bottom: 35px;
 }
 
 .feed h2 {
+    text-align: center;
     margin-bottom: 30px;
     margin-top: 50px;
 }
@@ -62,8 +64,11 @@ body > * {
     text-align: justify;
 }
 
-.feed ul {
-
+.feed article {
+    font-size: 14pt;
+    text-align: justify;
+    height: auto;
+    display: inline-block;
 }
 
 .feed {
@@ -73,7 +78,7 @@ body > * {
     overflow: hidden;
     width: 75%;
     min-width: 400px;
-    opacity: 0.97;
+    opacity: 0.98;
     margin-top: 20px;
     padding: 35px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
@@ -168,6 +173,9 @@ blockquote.style1 span {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
 }
+.right-image-text span{
+    display: block;
+}
 
 
 
@@ -188,12 +196,12 @@ blockquote.style1 span {
 }
 
 .question p {
+    display: inline-block;
     padding: 5px;
 }
 
 .answer {
     width: 100%;
-    height: 100%;
     text-align: center;
 }
 
@@ -225,9 +233,9 @@ blockquote.style1 span {
 }
 
 .center-image-text {
-    display: block;
     text-align: center;
     clear: both;
+    display: block;
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 100%;
@@ -243,6 +251,11 @@ blockquote.style1 span {
     height: auto;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.center-image-text span {
+    width: 50%;
+    max-width: 300px;
 }
 
 
