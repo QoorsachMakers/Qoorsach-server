@@ -23,7 +23,7 @@ function setStudentTestResult($dataLink, $id, $testName){
  * @return array|null возвращает массив с тестами и результатами
  */
 function getCurrentStudentTestResults($dataLink, $id){
-    $currentStudentTestResults = mysqli_fetch_all(mysqli_query($dataLink,"SELECT Test_Name, Result FROM Tests, Test_Results WHERE Student_ID = '".$id."' AND Test_Results.Test_ID = Tests.Test_ID;"));
+    $currentStudentTestResults = mysqli_fetch_all(mysqli_query($dataLink, "SELECT Test_Full_Name, Result FROM Tests, Test_Results WHERE Student_ID = '" . $id . "' AND Test_Results.Test_ID = Tests.Test_ID;"));
     return $currentStudentTestResults;
 }
 

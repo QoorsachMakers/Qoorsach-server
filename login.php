@@ -69,7 +69,6 @@ if ($_GET['cookie'] == 'off') {
             <td><input type="password" name="password"></td>
         </tr>
     </table>
-    <p>Чужой компьютер <input name="session" type="checkbox"></p><br>
     <img class="captcha" onclick="this.src = 'scripts/captcha.php?' + Math.random();" src="scripts/captcha.php"/>
     <p>Введи код:<br><input type="text" name="captcha_code"></p>
     <input class="btn" name="submit" type="submit" value="Войти"><br>

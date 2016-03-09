@@ -1,6 +1,7 @@
 <?php
 include_once('../scripts/global.php');
 include_once("../scripts/check.php");
+include_once('../scripts/head.php');
 
 if ($_POST) {
     echo '<div class="feed">';
@@ -123,19 +124,19 @@ if ($_POST) {
         <p>Мы призываем доктора бума, у тебя есть Sword Of Justice с одним, кто получит баф +1/+1? </p>
         <div class="answer">
             <label>
-                <input name="question1" type="radio" value="lbot">
+                <input name="question1" type="radio" value="lbot" required>
                 Бумбот слева
             </label>
             <label>
-                <input name="question1" type="radio" value="boom">
+                <input name="question1" type="radio" value="boom" required>
                 Доктор Бум
             </label>
             <label>
-                <input name="question1" type="radio" value="rbot">
+                <input name="question1" type="radio" value="rbot" required>
                 Бумбот справа
             </label>
             <label>
-                <input name="question1" type="radio" value="none">
+                <input name="question1" type="radio" value="none" required>
                 Никто
             </label>
         </div>
@@ -153,19 +154,19 @@ if ($_POST) {
             метателя, сколько ножей он метнет?</p>
         <div class="answer">
             <label>
-                <input name="question3" type="radio" value="0">
+                <input name="question3" type="radio" value="0" required>
                 0
             </label><br>
             <label>
-                <input name="question3" type="radio" value="1">
+                <input name="question3" type="radio" value="1" required>
                 1
             </label><br>
             <label>
-                <input name="question3" type="radio" value="2">
+                <input name="question3" type="radio" value="2" required>
                 2
             </label><br>
             <label>
-                <input name="question3" type="radio" value="3">
+                <input name="question3" type="radio" value="3" required>
                 3
             </label><br>
         </div>
@@ -178,9 +179,9 @@ if ($_POST) {
             Получит ли Core Rager +3/+3?</p>
         <div class="answer">
             <label><input name="question4" value="yes"
-                          type="radio"/>Да</label>
+                          type="radio" required/>Да</label>
             <label><input name="question4" value="no"
-                          type="radio"/>Нет</label>
+                          type="radio" required/>Нет</label>
         </div>
     </div>
 

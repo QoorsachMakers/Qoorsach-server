@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-color: white;
     text-align: center;
+    margin-top: 40px;
 }
 
 .head{
@@ -12,6 +13,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+
     padding-top:10px;
     width: 100%;
     height: 30px;
@@ -29,24 +31,33 @@ body {
     padding-left: 25px;
     padding-right: 25px;
 }
+
 .head a:hover {
     text-decoration: underline;
 }
 
-.head .current {
-    color: rgba(194,194,194,1);
+.head .username {
+    text-align: right;
+    padding-right: 25px;
+    text-decoration: none;
 }
 
-
-
-
-.feed ul, li{
+.feed ul, li, ol {
     font-size: 14pt;
     text-align: justify;
 }
 
 body > * {
     font-family: Georgia;
+}
+
+.feed a {
+    text-decoration: none;
+    color: blue;
+}
+
+.feed a:hover {
+    text-decoration: underline;
 }
 
 .feed h1 {
@@ -66,6 +77,7 @@ body > * {
 }
 
 .feed article {
+    width: auto;
     font-size: 14pt;
     text-align: justify;
     height: auto;
@@ -85,15 +97,13 @@ body > * {
     overflow: hidden;
     width: 75%;
     min-width: 400px;
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 35px;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-
-
-.feed table {
+.test-table {
     width: 40%;
     text-align: center;
     min-width: 350px;
@@ -106,7 +116,8 @@ body > * {
     box-shadow: 0 0 2px rgba(0,0,0,0.5);
 }
 
-.feed table td,th {
+.test-table td, th {
+    text-align: left;
     padding: 5px;
     width:100%;
     border: solid;
@@ -114,24 +125,76 @@ body > * {
     border-color: #c2c2c2;
 }
 
-blockquote.style1 {
-    font: 14px/20px italic Times, serif;
-    padding: 14px;
+.feed table {
+    text-align: center;
+    clear: both;
+    display: inline-block;
+    opacity: 1;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.feed table td, th {
+    text-align: center;
+    padding: 10px;
+    /*width:100%;*/
+    border: solid;
+    border-width: 1px;
+    border-color: #c2c2c2;
+}
+
+blockquote {
+    margin-top: 20px;
+    margin-right: 120px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    min-width: 350px;
+    text-align: justify;
+    font: 16px/22px italic Times, serif;
+    color: #7e4b19;
     background-color: white;
     border-top: 1px solid #e1cc89;
     border-bottom: 1px solid #e1cc89;
-    margin: 5px;
-    background-image: url("/img/quotes/openquote1.gif");
+    /*background-image: url("/img/quotes/openquote1.gif");*/
     background-position: top left;
     background-repeat: no-repeat;
-    text-indent: 23px;
+    border-radius: 7px;
+}
+
+blockquote span {
+    margin: 0 50px 0;
+    display: block;
+}
+
+blockquote.style1 {
+    margin-top: 20px;
+    margin-right: 120px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    min-width: 350px;
+    text-align: justify;
+    font: 16px/22px italic Times, serif;
+    color: #7e4b19;
+    background-color: white;
+    border-top: 1px solid #e1cc89;
+    border-bottom: 1px solid #e1cc89;
+    /*background-image: url("/img/quotes/openquote1.gif");*/
+    background-position: top left;
+    background-repeat: no-repeat;
+    border-radius: 7px;
 }
 
 blockquote.style1 span {
+    margin: 0 50px 0;
     display: block;
-    background-image: url("/img/quotes/closequote1.gif");
-    background-repeat: no-repeat;
-    background-position: bottom right;
+
+    /*background-image: url("/img/quotes/closequote1.gif");*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: bottom right;*/
 }
 
 .right-image {
@@ -145,6 +208,7 @@ blockquote.style1 span {
     width: auto;
     height: auto;
 }
+
 .right-image img {
     display: block;
     max-width: 300px;
@@ -155,7 +219,6 @@ blockquote.style1 span {
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
-
 
 .right-image-text {
     text-align: center;
@@ -180,11 +243,10 @@ blockquote.style1 span {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 3px rgba(0,0,0,0.4);
 }
+
 .right-image-text span{
     display: block;
 }
-
-
 
 .question {
     opacity: 1;
@@ -265,13 +327,9 @@ blockquote.style1 span {
     max-width: 300px;
 }
 
-
-
 .feed input {
 
 }
-
-
 
 .captcha {
     opacity: 1;
@@ -284,14 +342,19 @@ blockquote.style1 span {
 }
 
 .registration-block {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('/img/qoorsachEnglishBackground-blurry.jpg');
+    margin-left: auto;
+    margin-right: auto;
     clear: both;
     display: inline-block;
     text-align: center;
-    background-color: whitesmoke;
+    overflow: hidden;
     width: 40%;
     min-width: 300px;
     max-width: 450px;
-    opacity: 0.97;
     margin-top: 20px;
     padding: 35px;
     box-shadow: 0 0 4px rgba(0,0,0,0.5);
@@ -300,8 +363,6 @@ blockquote.style1 span {
 .registration-block table {
     width: 95%;
 }
-
-
 
 .registration-block table input {
     width: 100%;
