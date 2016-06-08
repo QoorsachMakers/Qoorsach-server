@@ -36,8 +36,10 @@ if ($_POST) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Тест: глаголы</title>
     <link rel="stylesheet" href="/css/commonStylesheet.css">
+    <link rel="stylesheet" href="/css/hint.base.css">
 </head>
 <body>
 <form name="fgsfds" method="post" class="feed">
@@ -107,7 +109,8 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>4. The _______ of the staff agreed to the proposal but Mr. Blake ______ to it. </p>
+        <p>4. The _______ of the <span class="hint--top-right hint" data-hint="Staff - Персонал">staff</span> agreed to
+            the proposal but Mr. Blake ______ to it. </p>
         <div class="answer">
             <label>
                 <input name="q4" type="radio" value="mostargued" required>

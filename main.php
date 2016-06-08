@@ -5,7 +5,7 @@ include_once('scripts/head.php');
 
 $currentStudentData = getCurrentStudentData($databaseLink, $_COOKIE['id'], $_COOKIE['hash']);
 print "<div class='feed' > <p style='text-align: center'>Привет, " . $currentStudentData['Student_Login'] . "<br>
- <a href='scripts/logoff.php'>Разлогин</a></p></div>"
+ <a href='scripts/logoff.php'>Выйти</a></p></div>"
 /**
  * Created by PhpStorm.
  * User: Roman
@@ -18,6 +18,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
 <head>
     <meta charset="UTF-8">
     <title>Система обучения</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/commonStylesheet.css">
 </head>
 <body>
@@ -37,7 +38,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
     <!--        </li>-->
     <!--    </ol>-->
     <h2>Часть 1. Глаголы в английском языке</h2>
-    <ol>
+    <ol class="content-list">
         <li>
             <a href="pages/verbTheory.php">
                 Классификация глаголов в английском языке
@@ -70,7 +71,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
         </li>
     </ol>
     <h2>Часть 2. Существительные в английском языке.</h2>
-    <ol>
+    <ol class="content-list">
         <li>
             <a href="pages/nounTheory.php">
                 Определение, классификация
@@ -103,7 +104,7 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
         </li>
     </ol>
     <h2>Часть 3. Артикль</h2>
-    <ol>
+    <ol class="content-list">
         <li>
             <a href="pages/articleTheory.php">
                 Определение, происхождение
@@ -121,14 +122,14 @@ print "<div class='feed' > <p style='text-align: center'>Привет, " . $curr
         </li>
         <li>
             <a href="pages/noArticle.php">
-                Отсутствие артикляя
+                Отсутствие артикля
             </a>
         </li>
     </ol>
     <h2>
         Часть 4. Лексический тест
     </h2>
-    <ol>
+    <ol class="content-list">
         <li>
             <a href="pages/cTest.php">
                 Пройти лексический тест

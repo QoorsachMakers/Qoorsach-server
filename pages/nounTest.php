@@ -35,11 +35,13 @@ if ($_POST) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Тест: существительные</title>
     <link rel="stylesheet" href="/css/commonStylesheet.css">
+    <link rel="stylesheet" href="/css/hint.base.css">
 </head>
 <body>
 <form name="fgsfds" method="post" class="feed">
@@ -70,7 +72,8 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>2. it was not her fault; It was her _____ of judgement </p>
+        <p>2. it was not her fault; It was her _____ of <span class="hint--top-right" data-hint="Judgement - Суждение">judgement</span>
+        </p>
         <div class="answer">
             <label>
                 <input name="q2" type="radio" value="mistake" required>
@@ -125,7 +128,8 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>5. The noun _______ means the value of a thing in money or in other goods. </p>
+        <p>5. The <span class="hint--top-right" data-hint="Noun - Имя существительное">noun</span> _______ means the
+            value of a thing in money or in other goods. </p>
         <div class="answer">
             <label>
                 <input name="q5" type="radio" value="price" required>
@@ -146,7 +150,8 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>6. The _____ of some local educational authorities is called director of education. </p>
+        <p>6. The _____ of some local educational <span class="hint--top-right" data-hint="Authorities – Власти">authorities</span>
+            is called director of education. </p>
         <div class="answer">
             <label>
                 <input name="q6" type="radio" value="director" required>
@@ -196,7 +201,10 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>8. The stage ______ in the commercial theater supervises the arrangement of scenery and props on the
+        <p>8. The stage ______ in the commercial theater <span class="hint--top-right"
+                                                               data-hint="to supervise – Надзирать, заведовать">supervises </span>the
+            arrangement of <span class="hint--top-right" data-hint="Scenery - Декорации">scenery</span> and <span
+                class="hint--top-right" data-hint="Props – Реквизит">props</span> on the
             stage</p>
         <div class="answer">
             <label>
@@ -222,7 +230,9 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>9. Peter has been made _______ of the plant where he works</p>
+        <p>9. Peter has been made _______ of the <span class="hint--top-right"
+                                                       data-hint="Plant – станция. Напр. Power plant - электростанция."> plant</span>
+            where he works</p>
         <div class="answer">
             <label>
                 <input name="q9" type="radio" value="director" required>
@@ -247,7 +257,8 @@ if ($_POST) {
         </div>
     </div>
     <div class="question">
-        <p>10. The ______ of the band was a young promising musician</p>
+        <p>10. The ______ of the <span class="hint--top-right" data-hint="Band – группа">band</span> was a young
+            promising musician</p>
         <div class="answer">
             <label>
                 <input name="q10" type="radio" value="director" required>

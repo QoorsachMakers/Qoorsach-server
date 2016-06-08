@@ -12,12 +12,13 @@ include_once('scripts/head.php');
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel=stylesheet href="css/commonStylesheet.css">
     <title>О проекте</title>
 </head>
 <body>
 <div class="feed">
-    <h2>О проекте</h2>
+    <h1>О проекте</h1>
     <article>
         Это мой курсовой/дипломный проект на 2015-2016 год. Изначально планировалось, что он должен помочь изучающим
         английский повысить свой уровень английского, например с А1 до А2. <br>

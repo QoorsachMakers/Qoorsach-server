@@ -8,7 +8,7 @@ echo '
 О проекте
 </a>
 <a href="http://ifgsfds.ru/scripts/logoff.php">
-Разлогин
+Выход
 </a>
 </div>
 '

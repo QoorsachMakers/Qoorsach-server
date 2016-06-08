@@ -42,8 +42,10 @@ if ($_POST) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Тест: глаголы</title>
     <link rel="stylesheet" href="/css/commonStylesheet.css">
+    <link rel="stylesheet" href="/css/hint.base.css">
 </head>
 <body>
 <form name="fgsfds" method="post" class="feed">
@@ -215,7 +217,8 @@ if ($_POST) {
     </div>
     <div class="question">
         <p>
-            8. He has ____ an effort to understand this problem.
+            8. He has ____ an <span class="hint--top-right" data-hint="Effort – Усилие, старание">effort</span> to
+            understand this problem.
         </p>
         <div class="answer">
             <label>
@@ -280,7 +283,8 @@ if ($_POST) {
     </div>
     <div class="question">
         <p>
-            11. They _________ the problem of pollution at present.
+            11. They _________ the problem of <span class="hint--top-right" data-hint="Pollution – Загрязнение">pollution</span>
+            at present.
         </p>
         <div class="answer">
             <label>
@@ -341,7 +345,9 @@ if ($_POST) {
     </div>
     <div class="question">
         <p>
-            14. Mr. Railly always speaks with authority and ______ immediate attention.
+            14. Mr. Railly always speaks with <span class="hint--top-right"
+                                                    data-hint="authority – власть, уполномоченный ">authority</span> and
+            ______ immediate attention.
         </p>
         <div class="answer">
             <label>
@@ -364,7 +370,9 @@ if ($_POST) {
     </div>
     <div class="question">
         <p>
-            15. Paul was a personage who all his feelings with the greatest vigor.
+            15. Paul was a <span class="hint--top-right" data-hint="Personage - Особа, человек">personage</span> who
+            ______ all his feelings with the greatest <span class="hint--top-right"
+                                                            data-hint="with vigor – энергично, с силой">vigor</span>.
         </p>
         <div class="answer">
             <label>

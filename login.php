@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
             mysqli_query($databaseLink, "UPDATE Students SET Student_Hash='" . $hash . "' WHERE Student_ID='" . $data['Student_ID'] . "'");
             setcookie("id", $data['Student_ID'], time() + 60 * 60 * 24 * 30, "/");
             setcookie("hash", $hash, time() + 60 * 60 * 24 * 30, "/");
-            header("Location: main.php");
+            header("Location: index.php");
             exit();
         } else {
             print "<div class='registration-block'>" . "Неверный логин/пароль" . "</div><br>";
@@ -50,6 +50,7 @@ if ($_GET['cookie'] == 'off') {
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel=stylesheet href="css/commonStylesheet.css">
     <title>Вход</title>
 </head>
