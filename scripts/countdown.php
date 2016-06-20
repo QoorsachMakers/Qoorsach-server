@@ -27,7 +27,7 @@
 </div>
 <script>
     var clock = document.getElementById("count");
-    var targetDate = new Date(2016, 5, 14); // Jan 1, 2050;
+    var targetDate = new Date(2016, 5, 18); // Jan 1, 2050;
 
     clock.innerHTML = countdown(targetDate).toString();
     clock.innerHTML = countdown(targetDate).toString();

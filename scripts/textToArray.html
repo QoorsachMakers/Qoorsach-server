@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Текст в массив</title>
+    <script>
+        function fgsfds() {
+            var inputValue = document.getElementById('input').value;
+            var output = document.getElementById('output');
+//            var lengthOfArray=0;
+//            for (x in inputValue){
+//                if (x=="!") lengthOfArray++;
+//            }
+            var arrayOfQuestions = [];
+            while (inputValue.indexOf("!") != -1) {
+                arrayOfQuestions[arrayOfQuestions.length] = inputValue.slice(0, inputValue.indexOf("!"));
+                inputValue = inputValue.slice(inputValue.indexOf("!") + 1, inputValue.length);
+            }
+
+            var shuffledArray = shuffle(arrayOfQuestions);
+
+            for (x in shuffledArray) {
+                output.value += shuffledArray[x] + "\n"
+            }
+//            output.value+="fgsfds";
+        }
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
+    </script>
+</head>
+<body>
+<div style="text-align: center">
+    <p>Введи текст</p>
+    <textarea id="input" style="min-width:500px; min-height: 200px;"></textarea><br>
+    <input type="button" onclick="fgsfds()" value="Нажми кнопку"><br>
+    <textarea id="output" style="min-width:500px; min-height: 200px;"></textarea>
+</div>
+</body>
+</html>
