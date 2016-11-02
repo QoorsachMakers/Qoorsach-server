@@ -1,2 +1,2 @@
-Содержимое этой папки планируется поместить на сервак.
-Я пока еще думаю над структурой.
+My graduate work for Tyumen Industrial University (Actually college).
+Probably will never be updated again.
